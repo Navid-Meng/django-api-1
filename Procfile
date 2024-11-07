@@ -1,1 +1,1 @@
-web: gunicorn api_project.wsgi:application --bind 0.0.0.0:8000 --workers 3
+web: python manage.py migrate && gunicorn api_project.wsgi:application
